@@ -21,8 +21,6 @@ const UserContextProvider = ({children}) => {
     .then((data)=> setUsers(data));
   }, [])
 
-  
-
    const changeWidth = (id, width) => {
     setUsers(
       users.map((user) =>
