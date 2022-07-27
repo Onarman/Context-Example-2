@@ -2,8 +2,11 @@ import { useUserContext } from '../context/UserContextProvider';
 
 const Users = ({ user }) => {
   
+  //?Destructring
   const { id, login, avatar_url, width } = user;
 
+
+  //? context ile fonk çağırıldı
   const { changeWidth } = useUserContext();
   return (
     <div>
